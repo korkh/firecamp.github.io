@@ -1,0 +1,75 @@
+.button {
+  display: inline-block;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  background-color: #e7e7e7;
+  padding: 3px 30px;
+  margin: 5px 5px;
+  font-size: 26px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  transition: background-color .1s ease;
+  cursor: pointer;
+}
+
+.button::after {
+  transition: background-color .2s ease;
+  position: absolute;
+  content: '';
+  height: 4px;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  opacity: .18;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  left: 0;
+}
+
+.button:focus, .button:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #7e919f;
+}
+
+.button:hover::after {
+  opacity: .22;
+}
+
+.button:active {
+  background-color: #d85b0c;
+}
+
+.button:active::after {
+  opacity: .32;
+}
+
+ .button-grey {
+  background-color: rgba(#a29f9f,1);
+}
+
+.button-grey::after {
+  background-color: #2a3339;
+}
+
+.button-grey:hover {
+  background-color: #7e919f;
+}
+
+.button-grey:hover::after {
+  opacity: .22;
+}
+
+.button-grey:active {
+  background-color: #404d56;
+}
+
+.button-grey:active::after {
+  opacity: .32;
+}
