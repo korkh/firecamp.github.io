@@ -170,7 +170,12 @@ padding: 20px;
 text-align: center;
 font-size: 26px;
 }
-
+.lastwords,
+.case {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ------------FOOTER-------------------*/
 
